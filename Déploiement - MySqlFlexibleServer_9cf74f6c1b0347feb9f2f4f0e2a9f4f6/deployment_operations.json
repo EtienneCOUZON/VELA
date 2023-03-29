@@ -1,0 +1,19 @@
+[
+  {
+    "id": "/subscriptions/0038e9be-00b1-498c-936d-f5fd51c1d350/resourceGroups/CESIEATS/providers/Microsoft.Resources/deployments/MySqlFlexibleServer_9cf74f6c1b0347feb9f2f4f0e2a9f4f6/operations/48B5611E6D3425D5",
+    "operationId": "48B5611E6D3425D5",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Running",
+      "timestamp": "2023-03-27T08:27:05.9763671Z",
+      "duration": "PT2M12.2712113S",
+      "trackingId": "76698d46-5460-46b8-9553-d08662dc2d85",
+      "statusCode": "Accepted",
+      "targetResource": {
+        "id": "/subscriptions/0038e9be-00b1-498c-936d-f5fd51c1d350/resourceGroups/CESIEATS/providers/Microsoft.DBforMySQL/flexibleServers/cesieatsproject",
+        "resourceType": "Microsoft.DBforMySQL/flexibleServers",
+        "resourceName": "cesieatsproject"
+      }
+    }
+  }
+]

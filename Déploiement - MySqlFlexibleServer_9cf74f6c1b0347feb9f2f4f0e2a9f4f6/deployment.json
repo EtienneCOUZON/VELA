@@ -1,0 +1,205 @@
+{
+  "id": "/subscriptions/0038e9be-00b1-498c-936d-f5fd51c1d350/resourceGroups/CESIEATS/providers/Microsoft.Resources/deployments/MySqlFlexibleServer_9cf74f6c1b0347feb9f2f4f0e2a9f4f6",
+  "name": "MySqlFlexibleServer_9cf74f6c1b0347feb9f2f4f0e2a9f4f6",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/0038e9be-00b1-498c-936d-f5fd51c1d350/resourceGroups/CESIEATS/providers/Microsoft.DBforMySQL/flexibleServers/cesieatsproject",
+    "marketplaceItemId": "Microsoft.MySQLFlexibleServer",
+    "provisioningHash": "MySqlFlexibleServer"
+  },
+  "properties": {
+    "templateHash": "4498972135123117848",
+    "parameters": {
+      "apiVersion": {
+        "type": "String",
+        "value": "2021-05-01"
+      },
+      "administratorLogin": {
+        "type": "String",
+        "value": "cesieats"
+      },
+      "administratorLoginPassword": {
+        "type": "SecureString"
+      },
+      "location": {
+        "type": "String",
+        "value": "francecentral"
+      },
+      "serverName": {
+        "type": "String",
+        "value": "cesieatsproject"
+      },
+      "serverEdition": {
+        "type": "String",
+        "value": "Burstable"
+      },
+      "vCores": {
+        "type": "Int",
+        "value": 1
+      },
+      "storageSizeGB": {
+        "type": "Int",
+        "value": 20
+      },
+      "haEnabled": {
+        "type": "String",
+        "value": "Disabled"
+      },
+      "availabilityZone": {
+        "type": "String",
+        "value": ""
+      },
+      "standbyAvailabilityZone": {
+        "type": "String",
+        "value": ""
+      },
+      "version": {
+        "type": "String",
+        "value": "5.7"
+      },
+      "tags": {
+        "type": "Object",
+        "value": {}
+      },
+      "firewallRules": {
+        "type": "Object",
+        "value": {
+          "rules": []
+        }
+      },
+      "backupRetentionDays": {
+        "type": "Int",
+        "value": 7
+      },
+      "geoRedundantBackup": {
+        "type": "String",
+        "value": "Disabled"
+      },
+      "vmName": {
+        "type": "String",
+        "value": "Standard_B1ms"
+      },
+      "storageIops": {
+        "type": "Int",
+        "value": 360
+      },
+      "storageAutogrow": {
+        "type": "String",
+        "value": "Enabled"
+      },
+      "autoIoScaling": {
+        "type": "String",
+        "value": "Disabled"
+      },
+      "vnetData": {
+        "type": "Object",
+        "value": {
+          "virtualNetworkName": "testVnet",
+          "subnetName": "testSubnet",
+          "virtualNetworkAddressPrefix": "10.0.0.0/16",
+          "virtualNetworkResourceGroupName": "CESIEATS",
+          "location": "eastus2",
+          "subscriptionId": "0038e9be-00b1-498c-936d-f5fd51c1d350",
+          "subnetProperties": {},
+          "isNewVnet": false,
+          "subnetNeedsUpdate": false,
+          "Network": {}
+        }
+      },
+      "identityData": {
+        "type": "Object",
+        "value": {}
+      },
+      "dataEncryptionData": {
+        "type": "Object",
+        "value": {}
+      },
+      "serverParameters": {
+        "type": "Array",
+        "value": []
+      },
+      "aadEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "aadData": {
+        "type": "Object",
+        "value": {}
+      },
+      "guid": {
+        "type": "String",
+        "value": "7b3454035f4f4613ba93f1b6c086be3b"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2023-03-27T08:27:05.9350008Z",
+    "duration": "PT2M13.0420529S",
+    "correlationId": "972254de-1612-429b-bf53-f215986c4d44",
+    "providers": [
+      {
+        "namespace": "Microsoft.DBforMySQL",
+        "resourceTypes": [
+          {
+            "resourceType": "flexibleServers",
+            "locations": [
+              "francecentral"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/0038e9be-00b1-498c-936d-f5fd51c1d350/resourceGroups/CESIEATS/providers/Microsoft.DBforMySQL/flexibleServers/cesieatsproject",
+            "resourceType": "Microsoft.DBforMySQL/flexibleServers",
+            "resourceName": "cesieatsproject"
+          }
+        ],
+        "id": "/subscriptions/0038e9be-00b1-498c-936d-f5fd51c1d350/resourceGroups/CESIEATS/providers/Microsoft.Resources/deployments/addAdmins",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "addAdmins"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/0038e9be-00b1-498c-936d-f5fd51c1d350/resourceGroups/CESIEATS/providers/Microsoft.DBforMySQL/flexibleServers/cesieatsproject",
+            "resourceType": "Microsoft.DBforMySQL/flexibleServers",
+            "resourceName": "cesieatsproject"
+          },
+          {
+            "id": "/subscriptions/0038e9be-00b1-498c-936d-f5fd51c1d350/resourceGroups/CESIEATS/providers/Microsoft.Resources/deployments/addAdmins",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "addAdmins"
+          }
+        ],
+        "id": "/subscriptions/0038e9be-00b1-498c-936d-f5fd51c1d350/resourceGroups/CESIEATS/providers/Microsoft.Resources/deployments/firewallRules-0",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "firewallRules-0"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/0038e9be-00b1-498c-936d-f5fd51c1d350/resourceGroups/CESIEATS/providers/Microsoft.DBforMySQL/flexibleServers/cesieatsproject",
+            "resourceType": "Microsoft.DBforMySQL/flexibleServers",
+            "resourceName": "cesieatsproject"
+          },
+          {
+            "id": "/subscriptions/0038e9be-00b1-498c-936d-f5fd51c1d350/resourceGroups/CESIEATS/providers/Microsoft.Resources/deployments/addAdmins",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "addAdmins"
+          }
+        ],
+        "id": "/subscriptions/0038e9be-00b1-498c-936d-f5fd51c1d350/resourceGroups/CESIEATS/providers/Microsoft.Resources/deployments/serverParameters-0-7b3454035f4f4613ba93f1b6c086be3b",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "serverParameters-0-7b3454035f4f4613ba93f1b6c086be3b"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
